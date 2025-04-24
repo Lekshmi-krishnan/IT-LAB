@@ -5,9 +5,7 @@ function validateRegistrationForm() {
   const lname = document.getElementById('lname');
   const emailid = document.getElementById('emailid');
   const password = document.getElementById('password');
-  const dob = document.getElementById('dob');
-  const genderOptions = document.getElementsByName('gender');
-  
+  const mobile number=document.getElementById ('mobile');
   let valid = true;
   let errorMsg = '';
 
