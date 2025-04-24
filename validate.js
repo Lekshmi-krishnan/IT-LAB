@@ -31,7 +31,6 @@ function validateRegistrationForm() {
     errorMsg += 'Mobile Number must be exactly 10 digits.\n';
     valid = false;
   }
-  
   if (!valid) {
     alert(errorMsg);
   }
