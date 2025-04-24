@@ -27,20 +27,8 @@ function validateRegistrationForm() {
     errorMsg += 'Password is required.\n';
     valid = false;
   }
-  if (dob && dob.value.trim() === '') {
-    errorMsg += 'Date of Birth is required.\n';
-    valid = false;
-  }
-  
-  let genderSelected = false;
-  for (let i = 0; i < genderOptions.length; i++) {
-    if (genderOptions[i].checked) {
-      genderSelected = true;
-      break;
-    }
-  }
-  if (!genderSelected) {
-    errorMsg += 'Please select a Gender.\n';
+  if (mobile && !/^\d{10}$/.test(mobile.value.trim())) {
+    errorMsg += 'Mobile Number must be exactly 10 digits.\n';
     valid = false;
   }
   
